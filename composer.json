@@ -9,7 +9,7 @@
         "barryvdh/laravel-snappy": "0.4.x",
         "doctrine/dbal": "^2.6",
         "h4cc/wkhtmltoimage-amd64": "0.12.x",
-        "temperworks/wkhtmltopdf-amd64": "0.12.x",
+        "TemperWorks/wkhtmltopdf-amd64": "0.12.x",
         "jrm2k6/cloudder": "0.4.*",
         "laravel/framework": "5.4.*",
         "laravel/tinker": "~1.0",
