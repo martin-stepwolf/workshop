@@ -195,7 +195,15 @@ return [
         /*
         * Laravel Newsletter for Mailchimp Service Provider
          */
-        Spatie\Newsletter\NewsletterServiceProvider::class
+        Spatie\Newsletter\NewsletterServiceProvider::class,
+        /*
+        * Laravel Backup Service Provider
+         */
+        Spatie\Backup\BackupServiceProvider::class,
+        /*
+        * Laravel Dropbox Driver Service Provider
+         */
+        BC\Laravel\DropboxDriver\ServiceProvider::class,
     ],
 
     /*
@@ -251,5 +259,4 @@ return [
         'Cloudder' => JD\Cloudder\Facades\Cloudder::class,
         'Newsletter' => Spatie\Newsletter\NewsletterFacade::class
     ],
-
 ];
