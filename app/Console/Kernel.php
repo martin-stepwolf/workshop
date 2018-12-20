@@ -24,10 +24,15 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $schedule->command('backup:clean')
-                 ->weekly()->tuesdays()->at('17:30');
-        $schedule->command('backup:run')
-                 ->weekly()->tuesdays()->at('17:45');
+        // $schedule->command('backup:clean')
+        //          ->weekly()->tuesdays()->at('17:30');
+        // $schedule->command('backup:run')
+        //          ->weekly()->tuesdays()->at('17:45');
+        //
+        $schedule->command('backup:run')->everyMinute()->when(function(){
+            //Returns true every week
+            return Cron::shouldIRun('backup:run', 1);
+        });          
     }
 
     /**
